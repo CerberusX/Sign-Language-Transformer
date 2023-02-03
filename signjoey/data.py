@@ -47,7 +47,7 @@ def load_data(data_cfg: dict) -> (Dataset, Dataset, Dataset, Vocabulary, Vocabul
         - txt_vocab: spoken text vocabulary extracted from training data
     """
 
-    data_path = data_cfg.get("data_path", "./data")
+    data_path = data_cfg.get("data_path", "/data/hyh/RWTH-PHOENIX-Weathe2014T")
 
     if isinstance(data_cfg["train"], list):
         train_paths = [os.path.join(data_path, x) for x in data_cfg["train"]]
